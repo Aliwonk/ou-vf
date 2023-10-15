@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plots",
+  "info": {
+    "singularName": "plot",
+    "pluralName": "plots",
+    "displayName": "Plot",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "level": {
+      "type": "integer"
+    },
+    "plot_points": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plot-point.plot-point",
+      "mappedBy": "plot"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plot_points",
+  "info": {
+    "singularName": "plot-point",
+    "pluralName": "plot-points",
+    "displayName": "Plot-Point",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plot": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plot.plot",
+      "inversedBy": "plot_points"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "latitude": {
+      "type": "float"
+    }
+  }
+}
